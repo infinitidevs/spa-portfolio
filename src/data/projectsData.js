@@ -23,7 +23,7 @@ export const projectsData = [
     image:
       './covers/project-cover-3.png',
     tech: ['HTML5', 'CSS3', 'JavaScript'],
-    github: 'https://github.com/infinitidevs/spa-portfolio',
+    github: 'https://spa-portfolio.netlify.app/',
     link: 'www.proyecto3.com'
   },
   {

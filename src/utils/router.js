@@ -4,10 +4,10 @@ import { printCareer } from "../pages/Career/Career";
 import { printSandbox } from "../pages/Sandbox/Sandbox";
 
 const routes = {
-    "/": {title: "Powered by Andrés Higuita", render: printHome},
-    "/lab": {title: "Tailor-Made Tech Solutions!", render: printProjects},
-    "/career": {title: "Career Path", render: printCareer},
-    "/sandbox": {title: "Alchemy is practiced here", render: printSandbox},
+    "/": {title: "/", render: printHome},
+    "/lab": {title: "Lab", render: printProjects},
+    "/career": {title: "Career", render: printCareer},
+    "/sandbox": {title: "Sandbox", render: printSandbox},
 };
 
 const handleRouter = () => {
