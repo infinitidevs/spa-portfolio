@@ -1,0 +1,124 @@
+.ah-sandbox {
+    margin: 0px 195px;
+}
+
+.ah-hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ah-hero__title {
+    color: #fff;
+    position: absolute;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    z-index: 1;
+}
+
+.ah-title__light {
+    color: var(--ah-primary-light);
+}
+
+.ah-cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #003298;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    -webkit-animation: cube 12s ease-in forwards infinite;
+    animation: cube 12s ease-in forwards infinite;
+}
+
+.ah-cube:nth-child(2n) {
+    border-color: #0051f4;
+}
+
+.ah-cube:nth-child(2) {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+}
+
+.ah-cube:nth-child(3) {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+}
+
+.ah-cube:nth-child(4) {
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+}
+
+.ah-cube:nth-child(5) {
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+}
+
+.ah-cube:nth-child(6) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+}
+
+@-webkit-keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+@keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .ah-sandbox {
+        margin: 0px 295px;
+    }
+}
+
+@media (max-width: 770px) {
+    main {
+        min-height: 80vh;
+    }
+
+    .ah-sandbox {
+        margin: 0rem 2rem;
+    }
+}
+
+@media (max-width: 430px) {
+    main {
+        min-height: 74vh;
+    }
+}

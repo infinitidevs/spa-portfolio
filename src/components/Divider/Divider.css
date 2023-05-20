@@ -1,0 +1,13 @@
+.ah-divider {
+    display: block;
+    border-bottom: 1px solid var(--divider);
+    height: 1px;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+@media (max-width: 770px) {
+    .ah-divider {
+        margin: 3rem 0;
+    }
+}

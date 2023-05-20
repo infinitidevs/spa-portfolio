@@ -1,0 +1,37 @@
+.ah-projects {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 195px;
+    gap: 2rem;
+}
+
+.ah-projects > h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.ah-projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 8rem;
+}
+
+@media (min-width: 1025px) {
+    .ah-projects {
+        margin: 0px 295px;
+    }
+}
+
+@media (max-width: 770px) {
+    .ah-projects {
+        padding: 0 3rem;
+        margin: 4rem 0 0 0;
+    }
+    
+    .ah-projects-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}

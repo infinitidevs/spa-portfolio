@@ -1,0 +1,98 @@
+:root {
+  --ah-primary-dark: #f5f5f5;
+  --ah-bg-dark: #020912;
+  --ah-primary-light: #111111;
+  --ah-bg-light: #f5f5f5;
+  --ah-highlight: #8f44fd;
+  --ah-highlight-a: rgba(142, 68, 253, 0.75);
+  --ah-hightlight-secondary: #8884FF;
+  --ah-divider: #a4a4a4;
+}
+
+html, body {
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--ah-bg-dark);
+  color: var(--ah-primary-dark);
+  transition: all 0.5s ease-in-out;
+  font-weight: 400;
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background-image: url("/public/images/bg-drk-desktop.svg");
+}
+
+.ah-light {
+  background-color: var(--ah-bg-light);
+  color: var(--ah-primary-light);
+  background-image: url("/public/images/bg-lght.svg");
+}
+
+@media (max-width: 1024px) {
+    body {
+      background-image: url("/public/images/bg-drk-desktop-normal.svg");
+    }
+}
+@media (max-width: 770px) {
+    body {
+      background-image: url("/public/images/bg-drk-tablet.svg");
+    }
+}
+
+main > * {
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+main {
+  min-height: 86vh;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Ubuntu", sans-serif;
+}
+
+a,
+p {
+  font-size: 1.1rem;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h2, h3, h4 {
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+}

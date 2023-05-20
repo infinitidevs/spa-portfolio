@@ -1,0 +1,45 @@
+header {
+    min-height: 5vh;
+    background-color: rgba(2, 9, 18, 0.8);
+    backdrop-filter: blur(12px) saturate(180%);
+    box-shadow: -1px 1px 3px 0px rgba(205, 23, 26, 0.302);
+}
+
+.ah-hdr__light {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.ah-top-nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0rem 0rem 0rem;
+    margin: 0px 195px;
+}
+
+@media (min-width: 1025px) {
+    header {
+        background-color: rgba(2, 9, 18, 0.149);
+        backdrop-filter: blur(12px) saturate(180%);
+    }
+
+    .ah-top-nav {
+        margin: 0px 295px;
+    }
+}
+
+@media (max-width: 770px) {
+    header {
+        height: 8vh;
+        margin: 1rem;
+        background-color: none;
+        backdrop-filter: none;
+        border-radius: 8px;
+    }
+    
+    .ah-top-nav {
+        padding: 0rem 2rem 0rem 2rem;
+        margin: 0;
+    }
+}
