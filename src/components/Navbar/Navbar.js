@@ -1,7 +1,7 @@
 import './Navbar.css';
 
 export const templateNavbar = () => `
-    <a href="/" role="link" aria-label="#" id="homelink" class="ah-logo">
+    <a href="#" role="link" aria-label="#" id="home-link" class="ah-logo">
       <h2>> AH _</h2>
     </a>
     <input id="menu-toggle" class="ah-menu-toggle" type="checkbox" />
@@ -11,13 +11,13 @@ export const templateNavbar = () => `
     <nav role="navigation" class="ah-menu">
       <ul>
         <li>
-          <a href="/lab" id="projectslink" role="link" aria-label="#">Lab</a>
+          <a href="#lab" id="lab-link" role="link" aria-label="#">Lab</a>
         </li>
         <li>
-          <a href="/career" id="careerlink" role="link" aria-label="#">Career Track</a>
+          <a href="#career" id="career-link" role="link" aria-label="#">Career Track</a>
         </li>
         <li>
-          <a href="/sandbox" id="sandbox" role="link" aria-label="#">Sandbox</a>
+          <a href="#sandbox" id="sandbox-link" role="link" aria-label="#">Sandbox</a>
         </li>
         <li>
           <button id="themeBtn" role="button">☀</button>

@@ -1,6 +1,8 @@
 import "./Sandbox.css";
+import { cleanPage } from "../../utils/cleanPage";
+import { changeSandbox } from "../../utils/changeTheme";
 
-export const Sandbox = () => {
+const template = () => {
     return `
     <section class="ah-sandbox">
         <article class="ah-hero"> 
@@ -15,3 +17,10 @@ export const Sandbox = () => {
     </section>
     `;
 };
+
+export const Sandbox = () => {
+    const main = document.querySelector("main");
+    cleanPage(main);
+    main.innerHTML = template();
+    changeSandbox();
+}; 

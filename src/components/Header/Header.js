@@ -8,7 +8,8 @@ const template = () => `
     </section>
 `;
 
-export const printTemplate = () => {
-    document.querySelector("header").innerHTML = template();
+export const Header = () => {
+    const header = document.querySelector("header");
+    header.innerHTML = template();
     changeTheme();
-};
+}; 

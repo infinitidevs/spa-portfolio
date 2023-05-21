@@ -1,8 +1,9 @@
 import './Footer.css';
 import { Button } from '../Button/Button';
+import { changeFooter } from '../../utils/changeTheme';
 
-
-const template = () => `
+const template = () => {
+    return `
     <section class="ah-footer-container" id="ah-footer-container">
         <article>
             <h2>Reach me out</h2>
@@ -12,8 +13,11 @@ const template = () => `
             ${Button("https://www.linkedin.com/in/infinitidevs", '/icons/linkedin.png', 'LinkedIn')}
         </article>
     </section>
-`;
-
-export const printTemplate = () => {
-    document.querySelector("footer").innerHTML = template();
+    `;
 };
+
+export const Footer = () => {
+    const footer = document.querySelector("footer");
+    footer.innerHTML = template();
+    changeFooter();
+}; 

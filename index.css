@@ -60,9 +60,9 @@ body {
 }
 
 @media (max-width: 430px) {
-  .ah-light {
-    background-image: url("/images/bg-lght-mobile.svg");
-  }
+    .ah-light {
+      background-image: url("/images/bg-lght-mobile.svg");
+    }
 }
 
 main > * {

@@ -1,6 +1,6 @@
 import "./Button.css";
 
-export const Button = (url, icon, text, className) => {
+export const Button = (url, icon, text) => {
     return `
         <a href=${url} class="ah-btn">
             <img src=${icon} alt=${text} class="ah-img-btn"

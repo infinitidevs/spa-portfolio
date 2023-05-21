@@ -80,7 +80,9 @@
     }
     
     .ah-content > h1 {
-        font-size: 3.5rem;    
+        font-size: 3.5rem;
+        background: linear-gradient(to right, #9845e8 0%, #33d2ff 10%, #dd5789 100%);            
+        -webkit-background-clip: text;
     }
 
     .ah-picture-wrapper {
