@@ -1,6 +1,6 @@
 import "./Home.css";
 
-const Home = () => {
+export const Home = () => {
     return `
     <section class="ah-home">
     <section class="ah-home-container">
@@ -20,8 +20,4 @@ const Home = () => {
         </article>
     </section>
     `;
-};
-
-export const printHome = () => {
-    document.querySelector("main").innerHTML = Home();
 };

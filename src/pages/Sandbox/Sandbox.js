@@ -1,6 +1,6 @@
 import "./Sandbox.css";
 
-const Sandbox = () => {
+export const Sandbox = () => {
     return `
     <section class="ah-sandbox">
         <article class="ah-hero"> 
@@ -14,8 +14,4 @@ const Sandbox = () => {
         </article>
     </section>
     `;
-};
-
-export const printSandbox = () => {
-    document.querySelector("main").innerHTML = Sandbox();
 };

@@ -1,21 +1,22 @@
-import { printHome } from "../pages/Home/Home";
-import { printProjects } from "../pages/Projects/Projects";
-import { printCareer } from "../pages/Career/Career";
-import { printSandbox } from "../pages/Sandbox/Sandbox";
+import { Home } from "../pages/Home/Home";
+import { Lab, LabItems } from "../pages/Lab/Lab";
+import { Career, CareerItems } from "../pages/Career/Career";
+import { Sandbox } from "../pages/Sandbox/Sandbox";
 
 const routes = {
-    "/": {title: "/", render: printHome},
-    "/lab": {title: "Lab", render: printProjects},
-    "/career": {title: "Career", render: printCareer},
-    "/sandbox": {title: "Sandbox", render: printSandbox},
+    "/": {title: "Home", render: Home},
+    "/lab": {title: "Lab", render: Lab, LabItems: LabItems},
+    "/career": {title: "Career", render: Career, CareerItems: CareerItems},
+    "/sandbox": {title: "Sandbox", render: Sandbox},
 };
 
 const handleRouter = () => {
     let page = routes[location.pathname];
     if (page) {
-        document.querySelector("main").innerHTML = "";
         document.title = page.title;
-        document.title.innerHTML = page.render();
+        document.querySelector("main").innerHTML = "";
+        document.querySelector("main").innerHTML = page.render();
+        page.title === "Lab" ? LabItems() : CareerItems(); 
     } else {
         history.replaceState(null, null, "/");
         handleRouter();
@@ -28,7 +29,6 @@ const Listeners = () => {
           e.preventDefault();
           history.pushState(null, null, e.target.href);
           handleRouter();
-            
         }
       });
       

@@ -4,7 +4,7 @@ import { CareerCard} from '../../components/CareerCard/CareerCard';
 import { Divider } from '../../components/Divider/Divider';
 
 
-const template = () => {
+export const Career = () => {
     return `
         <section class="ah-track-record">
             <h2>Career Track Record</h2>
@@ -15,16 +15,11 @@ const template = () => {
     `;
 };
 
-const printCareerItems = () => {
+export const CareerItems = () => {
     const container = document.querySelector("#ah-track-record-container");
     for (const careerItem of careerData) { 
         const figure = document.createElement("figure");
         figure.innerHTML = CareerCard(careerItem);
         container.appendChild(figure);
     }
-};
-
-export const printCareer = () => {
-    document.querySelector("main").innerHTML = template();
-    printCareerItems();
 };

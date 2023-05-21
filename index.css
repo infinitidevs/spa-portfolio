@@ -35,24 +35,34 @@ body {
   margin: 0 auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  background-image: url("/public/images/bg-drk-desktop.svg");
+  background-image: url("/images/bg-drk-desktop.svg");
 }
 
 .ah-light {
   background-color: var(--ah-bg-light);
   color: var(--ah-primary-light);
-  background-image: url("/public/images/bg-lght.svg");
+  background-image: url("/images/bg-lght-desktop.svg");
 }
 
 @media (max-width: 1024px) {
     body {
-      background-image: url("/public/images/bg-drk-desktop-normal.svg");
+      background-image: url("/images/bg-drk-desktop-normal.svg");
     }
 }
 @media (max-width: 770px) {
     body {
-      background-image: url("/public/images/bg-drk-tablet.svg");
+      background-image: url("/images/bg-drk-tablet.svg");
     }
+
+    .ah-light {
+      background-image: url("/images/bg-lght-tablet.svg");
+    }
+}
+
+@media (max-width: 430px) {
+  .ah-light {
+    background-image: url("/images/bg-lght-mobile.svg");
+  }
 }
 
 main > * {
