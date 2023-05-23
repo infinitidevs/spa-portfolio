@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     title: 'Responsive Landing Page',
-    description: 'Responsive Landing page for a eyewear store.',
+    description: 'Responsive Landing page for an eyewear store.',
     image:
       './covers/project-cover-1.png',
     tech: ['HTML5', 'CSS3'],
