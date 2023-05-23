@@ -79,10 +79,6 @@ main > * {
   }
 }
 
-main {
-  min-height: 86vh;
-}
-
 li {
   list-style-type: none;
 }

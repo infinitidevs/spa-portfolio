@@ -8,8 +8,8 @@
     overflow: hidden;
 }
 
-.ah-hero__title {
-    color: #fff;
+.ah-hero-title {
+    color: inherit;
     position: absolute;
     font-family: "Ubuntu", sans-serif;
     text-align: center;
@@ -18,10 +18,6 @@
     transform: translate(-50%, -50%);
     font-size: 30px;
     z-index: 1;
-}
-
-.ah-title__light {
-    color: var(--ah-primary-light);
 }
 
 .ah-cube {
@@ -101,8 +97,13 @@
 }
 
 @media (max-width: 770px) {
-    main {
-        min-height: 80vh;
+    .ah-sandbox {
+        margin: 15rem 0rem 0rem 0rem;
+    }
+
+    .ah-hero {
+        height: 500px;
+     
     }
 
     .ah-hero__title {
@@ -111,11 +112,7 @@
 }
 
 @media (max-width: 430px) {
-    main {
-        min-height: 74vh;
-    }
-
-    .ah-hero__title {
+     .ah-hero__title {
         font-size: 18px;
     }
 }
