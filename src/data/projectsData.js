@@ -12,7 +12,7 @@ export const projectsData = [
     title: 'SPA Dynamic Store',
     description: 'Dynamic store where the use of filters for product search is implemented. This project is the follow-up of Responsive Landing Page.',
     image:
-      './covers/project-cover-2.png',
+      './covers/SPA-Dynamic-Store.gif',
     tech: ['HTML5', 'CSS3', 'JavaScript'],
     github: 'https://github.com/infinitidevs/spa-dynamic-store',
     link: 'https://spa-dynamic-store.netlify.app/'
