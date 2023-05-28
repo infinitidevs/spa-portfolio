@@ -11,7 +11,7 @@ export const Home = () => {
         <article class="ah-content">
             <p>Hey, I'm</p>
             <h1>Andrés Higuita</h1>
-            <p>I'm a passionate and curious Full-Stack Developer Trainee based in Spain.<br> I produce tailor-made tech solutions. </p>
+            <p>I'm a problem-solving-minded and curious Full-Stack Developer Trainee based in Spain. I produce tailor-made tech solutions. </p>
         </article>
         <article class="ah-picture-wrapper">
             <img src="./images/profile-pic.png" 
